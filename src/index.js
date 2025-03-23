@@ -5,6 +5,7 @@ import any from './any';
 // Store setTimeout reference so promise-polyfill will be unaffected by
 // other code modifying setTimeout (like sinon.useFakeTimers())
 var setTimeoutFunc = setTimeout;
+let i = 1
 
 function isArray(x) {
   return Boolean(x && typeof x.length !== 'undefined');
